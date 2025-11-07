@@ -6,7 +6,7 @@
 
 header{
     width: 100%;
-    background-color: #dad621;
+    background-color: #f4f4b0;
     display: flex; //ativa as caixas flexiveis
     justify-content: flex-start; //É o padrão. Os itens são postos nocomeço do eixo principal.
     justify-content: flex-end; //Os itens são postos no final do eixo principal.
@@ -18,6 +18,14 @@ header{
    align-items: flex-start; //Padrão. Os itens são postos no começo do eixo Y (vertical)
    align-items: flex-end; //Os itens são postos no final do eixo Y (vertical)
    align-items: center; //Os itens são postos no meio do eixo Y (verticla)
+}
+
+div {
+    border: solid;
+    display: flex;
+    justify-content: space-between;
+    width: 12%;
+    align-items: center;
 }
 
 h1{
@@ -34,5 +42,69 @@ a{
     text-decoration: none;
     font-size: 1.2rem;
 }
+
+//Primeira Section
+
+.primeiraSection {
+background-color: yellow;
+height: 50vh;
+
+section {
+    border: solid;
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+}
+
+.produtosDisponiveis {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(22, 181, 181);
+    article {
+        border: solid black;
+        width: 20%;
+        height: 70vh;
+        display: flex;
+        //flex-direction: row; //Padrão. Os itens são organizados em forma de linha da esquerda pra direita.
+        //flex-direction: row-reverse; //Os itens são organizazdos em forma de linha (fileira) da direita para a esquerda.
+        flex-direction: column; //Os itens são organizados em coluna, de cima para baixo.
+
+        //justify-content: space-evenly;
+        //justify-content: space-around;
+        justify-content: space-between;
+        
+    
+        //align-items: flex-start;
+        // align-items: flex-end;
+        align-items:center;
+       
+
+
+        img {
+            width: 100%;
+            height: 30vh;
+            border: solid;
+        }
+
+        button {
+            width: 45%;
+            height: 5vh;
+            cursor: pointer;
+            margin-bottom: 1rem;
+            background-color: rgb(225, 167, 217);
+            color: #ffffff;
+            font-weight: 900;
+            border-radius: 15px;
+            font-size: 0.8rem;
+
+        }
+    }
+}
+
 
 
