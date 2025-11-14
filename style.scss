@@ -8,7 +8,7 @@ header{
     width: 100%;
     background-color: rgba(236, 234, 234, 0.927);
     display: flex; //ativa as caixas flexiveis
-    justify-content: flex-start; //É o padrão. Os itens são postos nocomeço do eixo principal.
+    justify-content: flex-start; //É o padrão. Os itens são postos no começo do eixo principal.
     justify-content: flex-end; //Os itens são postos no final do eixo principal.
     justify-content: center; //Os itens são postos no meio do eixo principal.
     justify-content: space-around; //O primeiro espaço vazio e o último são iguais.
@@ -44,16 +44,13 @@ a{
 
 //Primeira section
 .primeiraSection {
-    border: solid red;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 60vh;
-    
 
 
     section {
-        border: solid green;
         height: 60vh;
 
         
@@ -80,6 +77,29 @@ a{
     }
 }
 
+//Section dados numericos-----
+
+
+.dadosNumericos {
+    background-color: #f3f5f8;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: 20vh;
+    
+    div {
+        border: solid;
+        width: 20%;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    h2 {
+        color: #16a34a;
+    }
+}
 
 
 //Section produtos disponiveis
@@ -137,11 +157,12 @@ a{
 
 @media (max-widht: 500px) 
 
-    header {
+ .header {
         display: flex;
         flex-direction: column;
         height: 10vh;
     }
+
     .caixaLogo {
         border: solid;
         width: 10%;
@@ -160,10 +181,9 @@ a{
         }
     }
 
-    //Primeira Section
+    //Primeira Section - Mobile ---
 
     .primeiraSection {
-        background-color: violet;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -190,6 +210,19 @@ a{
 
     }
 
+//Section dados numericos
+.dadosNumericos {
+height: 25vh;
+
+div {
+    width: 20%;
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+}
+}
 
 
     //Section Produtos Disponiveis
